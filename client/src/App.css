@@ -48,32 +48,34 @@
 
 
 input {
-  line-height: 1.5;
+  line-height: 1.49;
   /*width: 80%;*/
   /*font-size: 1rem;*/
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 10px;
-  background: rgb(229, 222, 222);
-  color: #132a59;
+  background: rgb(40, 40, 40);
+  color: #eef0f5;
   outline: none;
   border: none;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .btn {
-  background-color: #282c34; /* Green */
+  background-color: #1c1c1c; /* Green */
   border: none;
   color: white;
-  /*padding: 15px 32px;*/
+  padding: 3% 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
   /*font-size: 1.25rem;*/
 }
 
 .btn:disabled {
-  opacity: 0.5;
+  /*opacity: 0.8;*/
   cursor: not-allowed;
 }
 
@@ -116,7 +118,7 @@ p {
 }
 
 .sent p {
-  color: #202323;
+  color: #0010c2;
   align-self: flex-end;
 }
 .received p {
