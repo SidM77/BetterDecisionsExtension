@@ -6,7 +6,7 @@
 }
 *{
   font-family: "Schibsted Grotesk","Arvo","Noto Sans","Outfit", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @keyframes logo-spin {
@@ -116,15 +116,14 @@ p {
 }
 
 .sent p {
-  color: #16192f;
-  /*background: #0b93f6;*/
+  color: #202323;
   align-self: flex-end;
 }
 .received p {
   /*background: #d9d723;*/
   /*color: #a0d3e5;*/
   /*color: #35bef5;*/
-  color: #141b1e;
+  color: #000000;
 
 }
 
@@ -147,11 +146,11 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #041028;
+  background: #85decc;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #03092c;
+  background: #7ec3cb;
 }
