@@ -27,15 +27,15 @@ function ChatRoom({ deviceName }) {
       .replace(/5g/g, "5G")
       .replace(/Gb/g, "GB");
     const initMsg = {
-      content: `Hi There! Welcome to Flipkart Electronics! Ask us about the latest SmartPhones! How can I assist you with ${dN}?`,
+      content: `Hi There! Welcome to Flipkart Smart-Assist! How can I assist you with ${dN}?`,
       name: "Assistant",
       timestamp: new Date(),
     };
     setMessages([...messages, initMsg]);
   }, []);
-  // const [messages, setMessages] = useState(dummyData);
+
   const [messages, setMessages] = useState(dummyData);
-  const [recMsgs, setRecMsgs] = useState([]);
+  // const [recMsgs, setRecMsgs] = useState([]);
   const [formValue, setFormValue] = useState("");
 
   const sendMessage = async (e) => {
@@ -53,7 +53,7 @@ function ChatRoom({ deviceName }) {
 
     /*PLEASE DON'T CHANGE THE BELOW LINE, IT SOMEHOW WORKS, I HAVE NO CLUE HOW*/
     messages.push(newMsg);
-    console.log("messages", messages);
+
     dummy.current.scrollIntoView({ behavior: "smooth" });
     window.scrollTo(0, document.body.scrollHeight);
     setFormValue("");
@@ -61,7 +61,7 @@ function ChatRoom({ deviceName }) {
     console.log("Now triggering API", messages);
     const prompt = `Previous Chats-${JSON.stringify(
       messages,
-    )}, Here is the list of all previous interactions between you and user. Here is the user's latest response-${formValue} Now provide further assistance as electronics store assistant. Try to limit response to 30 words(use more if deemed necessary) and pretend as if you are interacting with the user in a chatbot. If required use indian currency. Use GSMarena as a source first. Mention prices only if explicitly asked by the user.`;
+    )}, Here is the list of all previous interactions between you and user. Here is the user's latest response-${formValue} Now provide further assistance as store assistant. Try to limit response to 30 words(use more if deemed necessary) and pretend as if you are interacting with the user in a chatbot. If required use indian currency. Use GSMarena as a source first for electronics. Mention prices only if explicitly asked by the user.`;
 
     const result = await model.generateContent(prompt);
     const response = result.response;

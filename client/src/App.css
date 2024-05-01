@@ -5,19 +5,8 @@
   text-align: center;
 }
 *{
-  font-family: "Arvo","Noto Sans","Outfit", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-family: "Schibsted Grotesk","Arvo","Noto Sans","Outfit", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 @keyframes logo-spin {
@@ -127,7 +116,7 @@ p {
 }
 
 .sent p {
-  color: #ffffff;
+  color: #16192f;
   /*background: #0b93f6;*/
   align-self: flex-end;
 }
@@ -135,7 +124,7 @@ p {
   /*background: #d9d723;*/
   /*color: #a0d3e5;*/
   /*color: #35bef5;*/
-  color: #9ed5ec;
+  color: #141b1e;
 
 }
 
