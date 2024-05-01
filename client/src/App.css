@@ -148,11 +148,11 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #85decc;
+  background: #b6e3ea;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #7ec3cb;
+  background: #b6e2e7;
 }
