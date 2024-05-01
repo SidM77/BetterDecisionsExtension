@@ -54,7 +54,7 @@ function ChatRoom({ deviceName }) {
     /*PLEASE DON'T CHANGE THE BELOW LINE, IT SOMEHOW WORKS, I HAVE NO CLUE HOW*/
     messages.push(newMsg);
 
-    dummy.current.scrollIntoView({ behavior: "smooth" });
+    // dummy.current.scrollIntoView({ behavior: "smooth" });
     window.scrollTo(0, document.body.scrollHeight);
     setFormValue("");
 
@@ -73,7 +73,7 @@ function ChatRoom({ deviceName }) {
     };
     setMessages([...messages, newResp]);
 
-    dummy.current.scrollIntoView({ behavior: "smooth" });
+    // dummy.current.scrollIntoView({ behavior: "smooth" });
     window.scrollTo(0, document.body.scrollHeight);
   };
 
